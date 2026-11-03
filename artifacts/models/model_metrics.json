@@ -1,0 +1,145 @@
+{
+  "selected_model": "XGBoostRegressor",
+  "best_model_metrics": {
+    "mae_litres": 6589.57,
+    "rmse_litres": 9309.34,
+    "r2_score": 0.9884,
+    "mape_pct": 3.39,
+    "wape_pct": 3.46
+  },
+  "comparison_table": [
+    {
+      "Model": "Linear Regression Baseline",
+      "Val MAE (L)": 9786.26,
+      "Val RMSE (L)": 13381.03,
+      "Val R2": 0.9776,
+      "Test MAE (L)": 7854.81,
+      "Test RMSE (L)": 11005.85,
+      "Test R2": 0.9839
+    },
+    {
+      "Model": "Random Forest Regressor",
+      "Val MAE (L)": 7312.29,
+      "Val RMSE (L)": 10303.76,
+      "Val R2": 0.9867,
+      "Test MAE (L)": 6666.0,
+      "Test RMSE (L)": 9437.59,
+      "Test R2": 0.9881
+    },
+    {
+      "Model": "XGBoost Regressor",
+      "Val MAE (L)": 6853.51,
+      "Val RMSE (L)": 9630.99,
+      "Val R2": 0.9884,
+      "Test MAE (L)": 6589.57,
+      "Test RMSE (L)": 9309.34,
+      "Test R2": 0.9884
+    },
+    {
+      "Model": "TensorFlow/Keras Deep ANN",
+      "Val MAE (L)": 7935.84,
+      "Val RMSE (L)": 10684.41,
+      "Val R2": 0.9857,
+      "Test MAE (L)": 7679.0,
+      "Test RMSE (L)": 10195.46,
+      "Test R2": 0.9861
+    }
+  ],
+  "validation_metrics": {
+    "LinearRegression": {
+      "mae_litres": 9786.26,
+      "rmse_litres": 13381.03,
+      "r2_score": 0.9776,
+      "mape_pct": 5.7,
+      "wape_pct": 5.14
+    },
+    "RandomForestRegressor": {
+      "mae_litres": 7312.29,
+      "rmse_litres": 10303.76,
+      "r2_score": 0.9867,
+      "mape_pct": 3.76,
+      "wape_pct": 3.84
+    },
+    "XGBoostRegressor": {
+      "mae_litres": 6853.51,
+      "rmse_litres": 9630.99,
+      "r2_score": 0.9884,
+      "mape_pct": 3.52,
+      "wape_pct": 3.6
+    },
+    "TensorFlow_Keras_ANN": {
+      "mae_litres": 7935.84,
+      "rmse_litres": 10684.41,
+      "r2_score": 0.9857,
+      "mape_pct": 4.38,
+      "wape_pct": 4.17
+    }
+  },
+  "test_metrics": {
+    "LinearRegression": {
+      "mae_litres": 7854.81,
+      "rmse_litres": 11005.85,
+      "r2_score": 0.9839,
+      "mape_pct": 4.37,
+      "wape_pct": 4.12
+    },
+    "RandomForestRegressor": {
+      "mae_litres": 6666.0,
+      "rmse_litres": 9437.59,
+      "r2_score": 0.9881,
+      "mape_pct": 3.49,
+      "wape_pct": 3.5
+    },
+    "XGBoostRegressor": {
+      "mae_litres": 6589.57,
+      "rmse_litres": 9309.34,
+      "r2_score": 0.9884,
+      "mape_pct": 3.39,
+      "wape_pct": 3.46
+    },
+    "TensorFlow_Keras_ANN": {
+      "mae_litres": 7679.0,
+      "rmse_litres": 10195.46,
+      "r2_score": 0.9861,
+      "mape_pct": 4.32,
+      "wape_pct": 4.03
+    }
+  },
+  "feature_importances": {
+    "population": 0.6759,
+    "temp_mean": 0.0045,
+    "rainfall_mm": 0.0068,
+    "humidity_pct": 0.0007,
+    "heat_index": 0.0008,
+    "day_of_week": 0.0021,
+    "is_weekend": 0.0022,
+    "month": 0.0006,
+    "season_encoded": 0.0016,
+    "demand_lag_1": 0.0083,
+    "demand_lag_2": 0.0067,
+    "demand_lag_7": 0.013,
+    "rolling_mean_7d": 0.0298,
+    "rolling_std_7d": 0.0006,
+    "rolling_max_7d": 0.2464
+  },
+  "feature_columns": [
+    "population",
+    "temp_mean",
+    "rainfall_mm",
+    "humidity_pct",
+    "heat_index",
+    "day_of_week",
+    "is_weekend",
+    "month",
+    "season_encoded",
+    "demand_lag_1",
+    "demand_lag_2",
+    "demand_lag_7",
+    "rolling_mean_7d",
+    "rolling_std_7d",
+    "rolling_max_7d"
+  ],
+  "train_samples": 2565,
+  "val_samples": 545,
+  "test_samples": 545
+}

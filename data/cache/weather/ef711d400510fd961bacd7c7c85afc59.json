@@ -1,0 +1,69 @@
+{
+  "cached_at": 1791960677.6898363,
+  "cached_at_iso": "2026-10-14T06:51:17.689836",
+  "data": {
+    "source": "Open-Meteo Live API",
+    "latitude": 19.04,
+    "longitude": 74.52,
+    "cache_hit": false,
+    "fetched_at": "2026-10-14T06:51:17.689836",
+    "forecast": [
+      {
+        "date": "2026-10-14",
+        "temp_max": 30.1,
+        "temp_min": 20.4,
+        "temp_mean": 25.25,
+        "rainfall_mm": 0.0,
+        "humidity_pct": 56
+      },
+      {
+        "date": "2026-10-15",
+        "temp_max": 29.9,
+        "temp_min": 20.9,
+        "temp_mean": 25.4,
+        "rainfall_mm": 0.0,
+        "humidity_pct": 54
+      },
+      {
+        "date": "2026-10-16",
+        "temp_max": 30.6,
+        "temp_min": 21.0,
+        "temp_mean": 25.8,
+        "rainfall_mm": 0.0,
+        "humidity_pct": 50
+      },
+      {
+        "date": "2026-10-17",
+        "temp_max": 30.8,
+        "temp_min": 21.5,
+        "temp_mean": 26.15,
+        "rainfall_mm": 0.0,
+        "humidity_pct": 51
+      },
+      {
+        "date": "2026-10-18",
+        "temp_max": 30.8,
+        "temp_min": 20.7,
+        "temp_mean": 25.75,
+        "rainfall_mm": 0.0,
+        "humidity_pct": 52
+      },
+      {
+        "date": "2026-10-19",
+        "temp_max": 31.0,
+        "temp_min": 21.0,
+        "temp_mean": 26.0,
+        "rainfall_mm": 0.0,
+        "humidity_pct": 55
+      },
+      {
+        "date": "2026-10-20",
+        "temp_max": 31.0,
+        "temp_min": 21.0,
+        "temp_mean": 26.0,
+        "rainfall_mm": 0.0,
+        "humidity_pct": 55
+      }
+    ]
+  }
+}

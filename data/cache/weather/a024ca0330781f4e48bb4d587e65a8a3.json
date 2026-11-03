@@ -1,0 +1,29 @@
+{
+  "cached_at": 1791900168.8846374,
+  "cached_at_iso": "2026-10-13T14:02:48.884637",
+  "data": {
+    "source": "Open-Meteo Live API",
+    "latitude": 25.08,
+    "longitude": 73.88,
+    "cache_hit": false,
+    "fetched_at": "2026-10-13T14:02:48.884637",
+    "forecast": [
+      {
+        "date": "2026-10-13",
+        "temp_max": 34.2,
+        "temp_min": 22.0,
+        "temp_mean": 28.1,
+        "rainfall_mm": 0.0,
+        "humidity_pct": 45
+      },
+      {
+        "date": "2026-10-14",
+        "temp_max": 34.3,
+        "temp_min": 23.0,
+        "temp_mean": 28.65,
+        "rainfall_mm": 0.0,
+        "humidity_pct": 46
+      }
+    ]
+  }
+}

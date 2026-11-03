@@ -1,0 +1,87 @@
+{
+  "project_name": "JalSense",
+  "system_title": "Village-Level Water Demand Prediction, Shortage Forecasting & Intelligent Water Management System",
+  "mlops": {
+    "pipeline_version": "2.0.0",
+    "reproducible_training_command": "python run_pipeline.py",
+    "execution_environment": {
+      "python_version": "3.11.9",
+      "os": "Windows / Linux (Container Ready)",
+      "cuda_available": false,
+      "cpu_threads": 8
+    }
+  },
+  "data_versioning": {
+    "dataset_version": "v2.1.0-empirical-weather-merged",
+    "raw_records_ingested": 263811,
+    "source_dataset": "LukaLike/water-consumption-data",
+    "dataset_license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+    "processed_rows": 195,
+    "processed_columns": 23,
+    "study_catchment_id": "STUDY_RES_01",
+    "weather_source": "Open-Meteo Historical Archive & Live Forecast API",
+    "target_column": "water_demand_litres",
+    "standardized_date_format": "YYYY-MM-DD",
+    "split_methodology": "Chronological (Time-Series Forward Walk, No Random Shuffling)",
+    "train_split": 0.70,
+    "val_split": 0.15,
+    "test_holdout_split": 0.15,
+    "train_samples": 2565,
+    "val_samples": 545,
+    "test_samples": 545
+  },
+  "model_versioning": {
+    "model_version": "v2.0.0-champion-xgboost",
+    "model_artifact": "artifacts/models/water_demand_model.joblib",
+    "ann_artifact": "artifacts/models/water_demand_ann.keras",
+    "scaler_artifact": "artifacts/models/feature_scaler.joblib",
+    "champion_architecture": "XGBoostRegressor",
+    "hyperparameters": {
+      "n_estimators": 100,
+      "max_depth": 5,
+      "learning_rate": 0.08,
+      "subsample": 0.85,
+      "random_state": 42
+    },
+    "feature_count": 15,
+    "features": [
+      "population",
+      "temp_mean",
+      "rainfall_mm",
+      "humidity_pct",
+      "heat_index",
+      "day_of_week",
+      "is_weekend",
+      "month",
+      "season_encoded",
+      "demand_lag_1",
+      "demand_lag_2",
+      "demand_lag_7",
+      "rolling_mean_7d",
+      "rolling_std_7d",
+      "rolling_max_7d"
+    ],
+    "training_timestamp": "2026-10-07T14:48:22Z"
+  },
+  "champion_test_metrics": {
+    "test_mae_litres": 6589.57,
+    "test_rmse_litres": 9309.34,
+    "test_r2_score": 0.9884,
+    "test_mape_pct": 3.39,
+    "test_wape_pct": 3.46
+  },
+  "benchmarking_comparison": {
+    "models_evaluated": [
+      "Linear Regression Baseline",
+      "Random Forest Regressor",
+      "XGBoost Regressor (Champion)",
+      "TensorFlow/Keras Deep ANN"
+    ],
+    "test_r2_scores": {
+      "LinearRegression": 0.9839,
+      "RandomForest": 0.9881,
+      "XGBoost": 0.9884,
+      "DeepANN": 0.9861
+    }
+  }
+}

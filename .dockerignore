@@ -1,0 +1,40 @@
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node & Frontend Caches (Built separately in frontend container)
+frontend/node_modules/
+frontend/dist/
+node_modules/
+
+# Git Metadata
+.git/
+.gitignore
+
+# Environment & Secrets (Never bake credentials into Docker images)
+.env
+.env.*
+!.env.example
+!frontend/.env.example
+
+# OS & IDE Files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs & Temporary Files
+*.log
+*.tmp
+*.bak
